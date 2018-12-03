@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function validPinCode (str){
+        var regExp = /\d{6}/;
+        if (regExp.test(str)) {alert("It is a valid PinCode"); }
+        else alert("It is not valid");
+    }
+    var str = prompt("Insert a string ");
+    validPinCode(str);
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function evalConsonant(str){
+        let vowelArray = str.match(/[e|u|o|a|i]/gi);
+        let allLeter = str.match(/[a-zA-Z]/gi);
+        return allLeter.length- vowelArray.length;
+    }
+    var str= prompt("insert a string");
+    alert("Number of Consonants on that string is : " + evalConsonant(str));
+</script>
+</body>
+</html>
